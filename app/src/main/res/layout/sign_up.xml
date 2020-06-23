@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/main_bg"
+            tools:context=".sign_up"
+            android:fillViewport="true"
+            android:layout_centerInParent="true">
+
+	<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_margin="27dp"
+			android:background="@drawable/borderradius2"
+			android:orientation="vertical"
+			android:padding="24dp"
+			android:layout_marginBottom="?attr/actionBarSize">
+
+		<android.support.constraint.ConstraintLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_centerInParent="true">
+
+			<android.support.design.widget.TextInputLayout
+					android:id="@+id/user_name"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="8dp"
+					android:padding="5dp"
+					app:layout_constraintBottom_toTopOf="@+id/p_word"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toTopOf="parent">
+
+				<android.support.design.widget.TextInputEditText
+						android:id="@+id/username"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="@string/user_name"
+						android:inputType="text"
+						android:drawableEnd="@drawable/username_icon"/>
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+					android:id="@+id/p_word"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/user_name"
+					android:layout_centerInParent="true"
+					android:layout_marginTop="8dp"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:padding="5dp"
+					app:passwordToggleEnabled="true"
+					app:layout_constraintBottom_toTopOf="@id/c_p_word"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@id/user_name">
+
+				<android.support.design.widget.TextInputEditText
+						android:id="@+id/pword"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="@string/p_word"
+						android:inputType="textPassword"
+						android:maxEms="10"
+						android:maxLines="1"
+						android:padding="9dp"
+						android:textColorLink="#2BA9D1"/>
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+					android:id="@+id/c_p_word"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/p_word"
+					android:layout_centerInParent="true"
+					android:layout_marginTop="8dp"
+					android:focusable="true"
+					android:focusableInTouchMode="true"
+					android:padding="5dp"
+					app:passwordToggleEnabled="true"
+					app:layout_constraintBottom_toTopOf="@id/phone_num"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@id/p_word">
+
+				<android.support.design.widget.TextInputEditText
+						android:id="@+id/c_pword"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="@string/confirm_password"
+						android:inputType="textPassword"
+						android:maxEms="10"
+						android:maxLines="1"
+						android:padding="9dp"
+						android:textColorLink="#2BA9D1"/>
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+					android:id="@+id/phone_num"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/c_p_word"
+					android:layout_marginTop="8dp"
+					android:padding="5dp"
+					app:layout_constraintBottom_toTopOf="@id/email"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@id/c_p_word">
+
+				<android.support.design.widget.TextInputEditText
+						android:id="@+id/p_no"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="@string/phone_number"
+						android:inputType="phone"
+						android:drawableEnd="@drawable/phonenum_icon"/>
+			</android.support.design.widget.TextInputLayout>
+
+			<android.support.design.widget.TextInputLayout
+					android:id="@+id/email"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@id/phone_num"
+					android:layout_marginTop="8dp"
+					android:padding="5dp"
+					app:layout_constraintBottom_toTopOf="@id/sign_in"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@id/phone_num">
+
+				<android.support.design.widget.TextInputEditText
+						android:id="@+id/email_ad"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:hint="@string/email_address"
+						android:inputType="textEmailAddress"
+						android:drawableEnd="@drawable/email_icon"/>
+			</android.support.design.widget.TextInputLayout>
+
+			<Button
+					android:id="@+id/sign_in"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_below="@+id/email"
+					android:layout_centerInParent="true"
+					android:layout_marginStart="10dp"
+					android:layout_marginTop="10dp"
+					android:layout_marginEnd="10dp"
+					android:layout_marginBottom="10dp"
+					android:background="@drawable/borderradius"
+					android:onClick="register"
+					android:padding="12dp"
+					android:text="@string/sign_up_btn"
+					android:textAllCaps="false"
+					android:textAppearance="?android:textAppearanceMedium"
+					android:textColor="#fff"
+					app:layout_constraintBottom_toBottomOf="parent"
+					app:layout_constraintLeft_toLeftOf="parent"
+					app:layout_constraintRight_toRightOf="parent"
+					app:layout_constraintTop_toBottomOf="@id/email"/>
+		</android.support.constraint.ConstraintLayout>
+	</RelativeLayout>
+</ScrollView>

@@ -1,0 +1,38 @@
+<resources>
+	<string name="app_name" translatable="false">MovieRater</string>
+	<string name="c_d">Background</string>
+	<string name="U_Name">Username</string>
+	<string name="p_word">Password</string>
+	<string name="sign_in">Sign In</string>
+	<string name="sign_up">Not a member?</string>
+	<string name="remember">Remember Me</string>
+	<string name="polar">Polar</string>
+	<string name="dk_phoneix">Dark Phoenix</string>
+	<string name="us">US</string>
+	<string name="bd_box">Bird Box</string>
+	<string name="pet_sem">Pet Semetary</string>
+	<string name="shaz">Shazam</string>
+	<string name="f_f_part">Five Feet Apart</string>
+	<string name="aquaman">Aquaman</string>
+	<string name="t_front">Triple Frontier</string>
+	<string name="cd_desc"></string>
+	<string name="editTextHint">Movie Description</string>
+	<string name="movie_description">Review</string>
+	<string name="review_btn">Submit</string>
+	<string name="first_name">First Name</string>
+	<string name="last_name">Last Name</string>
+	<string name="user_name">User Name</string>
+	<string name="confirm_password">Confirm Password</string>
+	<string name="email_address">Email Address</string>
+	<string name="phone_number">Phone Number</string>
+	<string name="sign_up_btn">Sign Up</string>
+	<string name="alternative">or connect with</string>
+	<string name="f_pword">forgot password?</string>
+	<string name="movie_desc">An Epidermic broke out into the world whereby you must not open your eyes so as not to
+		contact it.
+	</string>
+	<string name="book_title">Book Title</string>
+	<string name="category">Category</string>
+	<string name="description">Description</string>
+	<string name="submit">submit</string>
+</resources>

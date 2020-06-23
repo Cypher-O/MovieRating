@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="facebook" translatable="false">\uf09a</string>
+	<string name="instagram" translatable="false">\uf16d</string>
+	<string name="twitter">\uf099</string>
+</resources>
